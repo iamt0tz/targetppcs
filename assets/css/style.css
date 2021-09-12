@@ -1,10 +1,4 @@
-/**
-* Template Name: Presento - v1.1.1
-* Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
+ 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -239,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   .get-started-btn {
-    margin: 35px 0 0;
+    margin: 5px -15px -40px -35px;
     padding: 6px 18px;
   }
 }
@@ -859,7 +853,7 @@ section {
   display: inline-block;
   font-size: 20px;
   font-weight: 600;
-  margin: 0;
+  margin-right: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -894,13 +888,13 @@ section {
   color: #3ec1d5;
 }
 .sus-btn {
-  background: #3EC1D5 none repeat scroll 0 0;
+  background: #fdfdfd none repeat scroll 0 0;
   border: 2px solid #fff;
-  color: #fff;
+  color: #252525;
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
