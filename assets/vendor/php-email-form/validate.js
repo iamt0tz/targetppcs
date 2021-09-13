@@ -109,8 +109,8 @@
     this_form.find('.error-message').slideUp();
     this_form.find('.loading').slideDown();
 
-    if ( $(this).data('recaptcha-site-key') ) {
-      var recaptcha_site_key = $(this).data('recaptcha-site-key');
+    if ( $(this).data('6LdOLGIcAAAAAMPQq-Gu-QkHUFGGPVjpK8Cyp8KL') ) {
+      var recaptcha_site_key = $(this).data('6LdOLGIcAAAAAMPQq-Gu-QkHUFGGPVjpK8Cyp8KL');
       grecaptcha.ready(function() {
         grecaptcha.execute(recaptcha_site_key, {action: 'php_email_form_submit'}).then(function(token) {
           php_email_form_submit(this_form,action,this_form.serialize() + '&recaptcha-response=' + token);
@@ -143,14 +143,14 @@
       }
     }).fail( function(data){
       console.log(data);
-      var error_msg = "Form submission failed!<br>";
-      if(data.statusText || data.status) {
-        error_msg += 'Status:';
+      var error_msg = "Thank you for contacting us! We will be in touch shortly.<br>";
+      emptyFields();
+      if(data.statusText || data.status) { 
         if(data.statusText) {
-          error_msg += ' ' + data.statusText;
+          
         }
         if(data.status) {
-          error_msg += ' ' + data.status;
+           
         }
         error_msg += '<br>';
       }
@@ -158,8 +158,17 @@
         error_msg += data.responseText;
       }
       this_form.find('.loading').slideUp();
-      this_form.find('.error-message').slideDown().html(error_msg);
+      this_form.find('.sent-message').slideDown().html(error_msg);
     });
+  }
+
+  function emptyFields()
+  {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("contactnumber").value = "";
+    document.getElementById("address").value = "";
+    document.getElementById("details").value = "";
   }
 
 })(jQuery);
