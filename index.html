@@ -27,6 +27,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Google captcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
  
 </head>
 
@@ -707,9 +710,169 @@
 
           </div>
 
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_Fp8o-3Z8BtMVuKattRwVARPGp28AaUQfCic6gzmAFCeVlQ/viewform?embedded=true" width="550" height="450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
    
+          </div> -->
+          <script>
+                     // Form validation code will come here.
+                            // function validate() {
+                              // function verifyCaptcha(token) {
+                              //     recaptcha_response = token;
+                              //     document.getElementById('g-recaptcha-error').innerHTML = '';
+                              // }
+                            // var recaptcha_response = '';
+                            //   if(recaptcha_response.length == 0) {
+                            //           document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+                            //           return false;
+                            //       }
+                                  
+                            //       else{
+                              
+                              
+                                                          
+                            // if( document.contactform.name.value == "" ) { 
+                            //   document.getElementById('name-error').innerHTML = '<span style="color:red;">This field is required.</span>'; 
+                            //   return false;
+                            // }
+
+                            // if( document.contactform.number.value == "" ) { 
+                            //   document.getElementById('number-error').innerHTML = '<span style="color:red;">This field is required.</span>'; 
+                            //   return false;
+                            // }
+
+                            // if( document.myForm.EMail.value == "" ) {
+                            //   alert( "Please provide your Email!" );
+                            //   document.myForm.EMail.focus() ;
+                            //   return false;
+                            // }
+                            // if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+                            //   document.myForm.Zip.value.length != 5 ) {
+                              
+                            //   alert( "Please provide a zip in the format #####." );
+                            //   document.myForm.Zip.focus() ;
+                            //   return false;
+                            // }
+                            // if( document.myForm.Country.value == "-1" ) {
+                            //   alert( "Please provide your country!" );
+                            //   return false;
+                            // }
+                      //       return( true );
+                        
+                      // }
+                      //-->
+          </script>
+
+          <!-- <div class="col-lg-6"> -->
+            <!-- <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe_Fp8o-3Z8BtMVuKattRwVARPGp28AaUQfCic6gzmAFCeVlQ/formResponse" onsubmit = "return(validate());"  id="contactform" name="contactform"   method="POST" target="_self" role="form" class="php-email-form"> -->
+            <!-- <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe_Fp8o-3Z8BtMVuKattRwVARPGp28AaUQfCic6gzmAFCeVlQ/formResponse"  id="form" name="contactform"   method="POST" target="_self" role="form" class="php-email-form">
+
+              <div class="form-row">
+                <div class="col form-group">
+                  <input type="text" name="entry.2005620554" class="form-control" id="fullname" placeholder="Name" data-rule="minlen:3" data-msg="Please enter valid name" />
+                  <div class="" id="name-error"></div>  
+                </div>      
+
+
+
+                <div class="col form-group">
+                  <input type="text" class="form-control" name="entry.1166974658" id="number" placeholder="Phone Number" data-rule="minlen:7" data-msg="Please enter your phone number" />
+                  <div class="" id="number-error"></div>
+                </div>
+              </div>
+              <div class=" form-group">
+                <input type="email" class="form-control" name="emailAddress" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="" id="email-error"></div>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="entry.1065046570" class="form-control" id="address" placeholder="Address" data-rule="minlen:3" data-msg="Please enter a valid address" />
+                <div class="" id="address-error"></div>
+              </div>
+
+              <div class="form-group">  
+                <select  class="form-control"  id="problem"  name="entry.839337160" data-rule="minlen:1" data-msg="Please enter at least 4 chars" />  -->
+                <!-- <option value="">Pest Problem (Please Choose)</option> -->
+                  <!-- <option value="Termite Problem">Termite Problem</option>
+                  <option value="Rat Problem">Rat Problem</option>
+                  <option value="General Pest Problem (Crawling & Flying Pests)">General Pest Problem (Crawling & Flying Pests)</option> 
+                </select> <br>                <div class="validate"></div>
+              </div>
+              
+              <div class="form-group">
+                <textarea class="form-control" id="details" name="entry.1223616828" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="" id="details-error"></div>
+              </div> -->
+              
+              <!-- CAPTCHA STARTS HERE -->
+              <!-- <div class="form-group">
+                <div class="g-recaptcha" id="recaptcha"  data-callback="verifyCaptcha"  data-sitekey="6LdOLGIcAAAAAMPQq-Gu-QkHUFGGPVjpK8Cyp8KL"></div>
+                <div class="" id="g-recaptcha-error"></div>
+              </div> -->
+              <!-- CAPTCHA ENDS HERE -->
+
+              <!-- <script>
+
+              </script>
+                
+
+              <div class="mb-3">
+                <div class="" id="messagesucces"></div> -->
+                <!-- <div class="loading">Loading</div> -->
+                <!-- <div  id="message-success" class=" "></div> -->
+                <!-- <div id="error_message" class="sent-message">Your message has been sent. Thank you!</div> -->
+              <!-- </div>
+              <div class="text-center"><button type="submit" name="submit" id="submit">Send Message</button></div>
+            </form> -->
+            
+          <!-- </div> -->
+          
+          <div class="col-lg-6">
+            <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe_Fp8o-3Z8BtMVuKattRwVARPGp28AaUQfCic6gzmAFCeVlQ/formResponse"  id="form" name="contactform"   method="POST" target="_self" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col form-group">
+                  <input type="text" name="entry.2005620554"  class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="This field is required" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col form-group">
+                  <input type="text"  name="entry.1166974658" class="form-control" id="contactnumber" placeholder="Contact Number" data-rule="minlen:4" data-msg="This field is required" />
+                  <div class="validate"></div>
+                </div> 
+              </div>
+                <div class=" form-group">
+                  <input type="text"  name="entry.1065046570" class="form-control" id="address" placeholder="Address" data-rule="minlen:4" data-msg="This field is required" />
+                  <div class="validate"></div>
+                </div> 
+                <div class="form-group">
+                  <input type="email"  name="emailAddress" class="form-control" id="email" placeholder="Your Email" data-rule="email" data-msg="This field is required" />
+                  <div class="validate"></div>
+                </div> 
+              <div class="form-group">  
+                <select  class="form-control"  id="problem"  name="entry.839337160" data-rule="minlen:1" data-msg="This field is required" /> 
+                  <option value="Termite Problem">Termite Problem</option>
+                  <option value="Rat Problem">Rat Problem</option>
+                  <option value="General Pest Problem (Crawling & Flying Pests)">General Pest Problem (Crawling & Flying Pests)</option> 
+                </select> <br>              
+                  <div class="validate"></div>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" id="details" name="entry.1223616828" rows="5" data-rule="required" data-msg="This field is required" placeholder="Details"></textarea>
+                <div class="validate"></div>
+              </div>
+
+                <div class="form-group">
+                <div class="g-recaptcha" id="recaptcha"  data-callback="verifyCaptcha"  data-sitekey="6LdOLGIcAAAAAMPQq-Gu-QkHUFGGPVjpK8Cyp8KL"></div>
+                <div class="" id="g-recaptcha-error"></div>
+              </div> 
+              
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
           </div>
 
         </div>        
@@ -816,6 +979,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
