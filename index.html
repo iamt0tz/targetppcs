@@ -33,6 +33,8 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -755,22 +757,47 @@
                 <div class="validate"></div>
               </div>
 
-              <!-- START CAPTCHA -->
-              <!-- <div class="form-group">
-                <div class="g-recaptcha" id="recaptcha"  data-callback="verifyCaptcha"  data-sitekey="6LdOLGIcAAAAAMPQq-Gu-QkHUFGGPVjpK8Cyp8KL" data-secretkey="6LdOLGIcAAAAALl3aIPS1bef28KkH9OLkZnDtCbI"></div>
-                <div class="" id="g-recaptcha-error">
-                </div>
-              </div>  -->
-              <!-- END CAPTCHA -->
+              <!-- google recaptcha -->
+              <div class="form-group">
+
+				<div class="g-recaptcha" name="captcha" id="captcha" data-sitekey="6LdOLGIcAAAAAMPQq-Gu-QkHUFGGPVjpK8Cyp8KL" data-rule="required" data-msg="Please prove you're not a robot"></div>
+				<div name="validate"></div>
+              </div>
+              <!-- end google recaptcha -->
+
+ 
               
               <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center">
+              	<button name="submit" id="submit" type="submit">Send Message</button> 
+              </div>
             </form>
           </div>
+
+          <script>
+          	document.getElementById("form").addEventListener("submit",function(evt)
+			  {
+			  
+			  var response = grecaptcha.getResponse();
+			  if(response.length == 0) 
+			  { 
+			    //reCaptcha not verified
+			    alert("Please prove you're not a robot.");  
+			    evt.preventDefault();
+			        document.getElementById("name").value = "";
+				    document.getElementById("email").value = "";
+				    document.getElementById("contactnumber").value = "";
+				    document.getElementById("address").value = "";
+				    document.getElementById("details").value = "";
+			    return false;  
+			  } 
+ 
+});
+          </script>
 
         </div>        
         
